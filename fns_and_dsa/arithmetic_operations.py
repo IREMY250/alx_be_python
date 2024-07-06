@@ -10,8 +10,8 @@ def perform_operation (num1 : float , num2 : float , operation: str) :
             print ("can't divide by zero")
         elif num2 != 0 :
             return num1 / num2 
+from arithmetic_operations import perform_operation
 def main():
-    from arithmetic_operations import perform_operation
     print("Arithmetic Operations")
     num1 = float(input("Enter the first number: "))
     num2 = float(input("Enter the second number: "))
