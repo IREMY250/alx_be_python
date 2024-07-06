@@ -12,7 +12,7 @@ def perform_operation (num1 : float , num2 : float , operation: str) :
         elif num2 != 0 :
             return num1 / num2 
 def main():
-    from arithmetic_operations import perform_operation
+    # from arithmetic_operations import perform_operation
     print("Arithmetic Operations")
     num1 = float(input("Enter the first number: "))
     num2 = float(input("Enter the second number: "))
@@ -20,5 +20,6 @@ def main():
     result = perform_operation (num1, num2, operation) 
     print(f"Result: {result}")
 
-if __name__ == "__main__":
+if __name__ == "__main__" :
+    from arithmetic_operations import perform_operation
     main()
