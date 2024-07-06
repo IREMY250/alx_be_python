@@ -7,10 +7,8 @@ def perform_operation(num1,num2,operation):
         case'multiply':
             return num1*num2
         case'divide':
-            if num2!=0 :
-                return num1/num2
-            else :
-                print("can't divide by zero")
+            if num1==0 or num2==0 :
+                print ("can't divide by zero")
 from arithmetic_operations import perform_operation
 def main():
     print("Arithmetic Operations")
