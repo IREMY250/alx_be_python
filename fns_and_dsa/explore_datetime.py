@@ -11,8 +11,7 @@ def calculate_future_date():
     delta= datetime.timedelta(days=number_of_days)
     day = datetime.today()
     future_date=delta+day
-    result= future_date.strftime("%y-%m-%d %H:%M:%S")
+    result= future_date.strftime()
     print(f"Future date:{result}")
-
 display_current_datetime()
 calculate_future_date()
