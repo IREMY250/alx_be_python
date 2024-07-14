@@ -10,5 +10,8 @@ class BankAccount :
             return True
         else :
             return False
-    def  display_balance():
+    def  display_balance(self):
          print(f"Current balance: ${self.__account_balance:.2f}")
+# account = BankAccount()
+# account.deposit(500)
+# account.display_balance()
