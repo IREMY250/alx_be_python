@@ -8,7 +8,7 @@ def convert_to_fahrenheit(celsius):
     fahrenheit=(celsius*CELSIUS_TO_FAHRENHEIT_FACTOR)+32
     return fahrenheit
 def main():
-    #try:
+    try:
         temp_input = input("Enter the temperature to convert:")
         temperature = float (temp_input)
         unit = input ("Is this temperature in Celsius or Fahrenheit? (C/F): ")
@@ -20,7 +20,7 @@ def main():
             print (f"{temperature} C is {converted_temp} F")
         else:
             print("Invalid unit. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
-    #except ValueError:
-       # print("Invalid temperature. Please enter a numeric value.")
+    except ValueError:
+        print("Invalid temperature. Please enter a numeric value.")
 if __name__ == "__main__":
     main()
